@@ -34,5 +34,38 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/* Structure for stack */
+typedef struct stack {
+    int top;
+    unsigned capacity;
+    int* array;
+} Stack;
+
+/* Function prototypes */
+Stack* createStack(unsigned capacity);
+int isFull(Stack *stack);
+int isEmpty(Stack *stack);
+void push(Stack *stack, int item);
+void pop(Stack* stack, int line_number);
+void pall(Stack *stack);
+void pint(Stack* stack, int line_number);
+void swap(Stack* stack, int line_number);
+void add(stack_t **stack, unsigned int line_number);
+void nop();
+void sub(stack_t **stack, unsigned int line_number);
+void div(stack_t **stack, unsigned int line_number);
+void mul(stack_t **stack, unsigned int line_number);
+void mod(stack_t **stack, unsigned int line_number);
+void pchar(stack_t **stack, unsigned int line_number);
+void pstr(Stack* stack);
+void rotl(stack_t **stack, unsigned int line_number)
+void rotr(Stack* stack);
+void stack(Stack* stack);
+void queue(Stack* stack);
+void rotr(stack_t **stack, unsigned int line_number);
+void stack(stack_t **stack, unsigned int line_number);
+void queue(stack_t **stack, unsigned int line_number);
+instruction_t get_func(char *opcode);
+
 
 #endif
