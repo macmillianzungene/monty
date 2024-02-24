@@ -1,16 +1,14 @@
 #include "monty.h"
 
 /**
- * stack - sets the format of the data to a stack (LIFO)
- * @stack: double pointer to the top of the stack
- * @line_number: value of the new node
+ * f_stack - sets the format of the data to a stack (LIFO)
+ * @head: double pointer to the top of the stack
+ * @counter: value of the new node
  * Return: nothing
  */
-void stack(stack_t **stack, unsigned int line_number)
+void f_stack(stack_t **head, unsigned int counter)
 {
-	(void) stack;
-	(void) line_number;
-
-	/* Set the global variable for the data format to STACK */
-	data_format = STACK;
+	(void)head;
+	(void)counter;
+	bus.lifi = 0;
 }
