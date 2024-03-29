@@ -2,7 +2,7 @@
 
 /**
  * f_rotl - rotates the stack to the top
- * @head double pointer to the top of the stack
+ * @head: double pointer to the top of the stack
  * @counter: value of the new node
  * Return: nothing
  */

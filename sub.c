@@ -3,7 +3,7 @@
 /**
  * f_sub - subtracts the top element of the stack from the second top element
  * @head: double pointer to the top of the stack
- * @Counter: value of the node
+ * @counter: value of the node
  * Return: nothing
  */
 void f_sub(stack_t **head, unsigned int counter)

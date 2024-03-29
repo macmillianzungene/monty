@@ -1,4 +1,3 @@
-Can't create, edit, or upload … Not enough storage.
 #include "monty.h"
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
